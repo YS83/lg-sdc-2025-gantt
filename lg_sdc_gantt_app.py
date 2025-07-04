@@ -5,11 +5,12 @@ from datetime import datetime, timedelta
 
 # Define the LG SDC 2025 schedule data with status and resource
 tasks = [
-    {"Task": "키비주얼(KV), 키컬러(KC) 선정", "Start": "2025-06-18", "Finish": "2025-07-04", "Resource": "김영삼", "Status": "Planned"},
-    {"Task": "키노트 발표 주제 선정", "Start": "2025-06-23", "Finish": "2025-07-11", "Resource": "김영삼", "Status": "Planned"},
-    {"Task": "데모 부스 주제 선정", "Start": "2025-06-23", "Finish": "2025-07-11", "Resource": "김영삼", "Status": "Planned"},
-    {"Task": "세션 및 이그나잇 발표자 모집", "Start": "2025-07-14", "Finish": "2025-08-01", "Resource": "김영삼", "Status": "Planned"},
-    {"Task": "세션 및 이그나잇 발표자 선정", "Start": "2025-08-04", "Finish": "2025-08-08", "Resource": "김영삼", "Status": "Planned"},
+    {"Task": "콘셉트 디자인 확정", "Start": "2025-06-18", "Finish": "2025-07-04", "Resource": "김영삼", "Status": "In progress"},
+    {"Task": "키노트 발표 주제 확정", "Start": "2025-06-23", "Finish": "2025-07-11", "Resource": "김영삼", "Status": "In progress"},
+    {"Task": "데모 부스 주제 확정", "Start": "2025-06-23", "Finish": "2025-07-11", "Resource": "김영삼", "Status": "In progress"},
+    {"Task": "발표자 모집", "Start": "2025-07-14", "Finish": "2025-08-01", "Resource": "김영삼", "Status": "Planned"},
+    {"Task": "발표자 선정", "Start": "2025-08-04", "Finish": "2025-08-08", "Resource": "김영삼", "Status": "Planned"},
+    {"Task": "발표자 선정 결과 안내", "Start": "2025-08-11", "Finish": "2025-08-11", "Resource": "김영삼", "Status": "Planned"},
     {"Task": "LGCPC 참가자 모집", "Start": "2025-07-25", "Finish": "2025-08-22", "Resource": "정진우", "Status": "Planned"},
     {"Task": "키노트, 세션 발표 자료 제출", "Start": "2025-08-11", "Finish": "2025-09-12", "Resource": "김영삼", "Status": "Planned"},
     {"Task": "참가자 사전 등록", "Start": "2025-08-25", "Finish": "2025-09-19", "Resource": "김영삼", "Status": "Planned"},
@@ -18,7 +19,9 @@ tasks = [
     {"Task": "LGCPC 2025 본선 대회", "Start": "2025-09-20", "Finish": "2025-09-20", "Resource": "정진우", "Status": "Planned"},
     {"Task": "LG SDC 2025", "Start": "2025-09-23", "Finish": "2025-09-25", "Resource": "김영삼", "Status": "Planned"},
     {"Task": "커피챗 지원자 모집", "Start": "2025-07-25", "Finish": "2025-08-22", "Resource": "김영삼", "Status": "Planned"},
-    {"Task": "키노트 연사 프로필 사진 취합", "Start": "2025-06-23", "Finish": "2025-07-11", "Resource": "김영삼", "Status": "Planned"},
+    {"Task": "키노트 연사 프로필 사진 취합", "Start": "2025-06-23", "Finish": "2025-07-11", "Resource": "김영삼", "Status": "In progress"},
+    {"Task": "컨퍼런스 주제/슬로건 확정", "Start": "2025-06-30", "Finish": "2025-07-01", "Resource": "김영삼", "Status": "Compeleted"},
+    {"Task": "홈페이지 오픈 준비", "Start": "2025-07-03", "Finish": "2025-07-10", "Resource": "김영삼", "Status": "Planned"},
 ]
 
 # Convert to DataFrame

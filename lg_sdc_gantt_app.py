@@ -20,7 +20,7 @@ tasks = [
     {"Task": "LG SDC 2025", "Start": "2025-09-23", "Finish": "2025-09-25", "Resource": "김영삼", "Status": "Planned"},
     {"Task": "커피챗 지원자 모집", "Start": "2025-07-25", "Finish": "2025-08-22", "Resource": "김영삼", "Status": "Planned"},
     {"Task": "키노트 연사 프로필 사진 취합", "Start": "2025-06-23", "Finish": "2025-07-11", "Resource": "김영삼", "Status": "In progress"},
-    {"Task": "컨퍼런스 주제/슬로건 확정", "Start": "2025-06-30", "Finish": "2025-07-01", "Resource": "김영삼", "Status": "Compeleted"},
+    {"Task": "컨퍼런스 주제/슬로건 확정", "Start": "2025-06-30", "Finish": "2025-07-01", "Resource": "김영삼", "Status": "Completed"},
     {"Task": "홈페이지 오픈 준비", "Start": "2025-07-03", "Finish": "2025-07-10", "Resource": "김영삼", "Status": "Planned"},
 ]
 
@@ -32,10 +32,11 @@ today = datetime.today().date()
 for i, row in df.iterrows():
     finish_date = datetime.strptime(row['Finish'], "%Y-%m-%d").date()
     days_left = (finish_date - today).days
-    if days_left < 0:
-        df.at[i, 'Status'] = 'Overdue'
-    elif days_left <= 7:
-        df.at[i, 'Status'] = 'Due Soon'
+    if row['Status'] != 'Completed':
+        if days_left < 0:
+            df.at[i, 'Status'] = 'Overdue'
+        elif days_left <= 7:
+            df.at[i, 'Status'] = 'Due Soon'
 
 # Sort tasks by start date descending
 df['Start_dt'] = pd.to_datetime(df['Start'])
@@ -52,6 +53,14 @@ def add_duration_label(row):
         return f"{row['Task']} ({duration}일)"
 
 df['Task'] = df.apply(add_duration_label, axis=1)
+
+# Sidebar for manual status update
+st.sidebar.header("작업 상태 수동 변경")
+selected_task = st.sidebar.selectbox("작업 선택", df['Task'])
+new_status = st.sidebar.selectbox("새 상태 선택", ["Planned", "In progress", "Due Soon", "Overdue", "Completed"])
+if st.sidebar.button("상태 업데이트"):
+    df.loc[df['Task'] == selected_task, 'Status'] = new_status
+    st.sidebar.success(f"'{selected_task}' 상태가 '{new_status}'로 변경되었습니다.")
 
 # Create Gantt chart using Status for color
 fig = ff.create_gantt(

@@ -3,26 +3,45 @@ import pandas as pd
 import plotly.figure_factory as ff
 from datetime import datetime, timedelta
 
-# Define the LG SDC 2025 schedule data with status and resource
+# Initial task data
 tasks = [
-    {"Task": "콘셉트 디자인 확정", "Start": "2025-06-18", "Finish": "2025-07-04", "Resource": "김영삼", "Status": "In progress"},
-    {"Task": "키노트 발표 주제 확정", "Start": "2025-06-23", "Finish": "2025-07-11", "Resource": "김영삼", "Status": "In progress"},
-    {"Task": "데모 부스 주제 확정", "Start": "2025-06-23", "Finish": "2025-07-11", "Resource": "김영삼", "Status": "In progress"},
-    {"Task": "발표자 모집", "Start": "2025-07-14", "Finish": "2025-08-01", "Resource": "김영삼", "Status": "Planned"},
-    {"Task": "발표자 선정", "Start": "2025-08-04", "Finish": "2025-08-08", "Resource": "김영삼", "Status": "Planned"},
-    {"Task": "발표자 선정 결과 안내", "Start": "2025-08-11", "Finish": "2025-08-11", "Resource": "김영삼", "Status": "Planned"},
-    {"Task": "LGCPC 참가자 모집", "Start": "2025-07-25", "Finish": "2025-08-22", "Resource": "정진우", "Status": "Planned"},
-    {"Task": "키노트, 세션 발표 자료 제출", "Start": "2025-08-11", "Finish": "2025-09-12", "Resource": "김영삼", "Status": "Planned"},
-    {"Task": "참가자 사전 등록", "Start": "2025-08-25", "Finish": "2025-09-19", "Resource": "김영삼", "Status": "Planned"},
-    {"Task": "언론 보도 의뢰", "Start": "2025-08-25", "Finish": "2025-09-19", "Resource": "나명지", "Status": "Planned"},
-    {"Task": "LGCPC 2025 예선 대회", "Start": "2025-09-06", "Finish": "2025-09-06", "Resource": "정진우", "Status": "Planned"},
-    {"Task": "LGCPC 2025 본선 대회", "Start": "2025-09-20", "Finish": "2025-09-20", "Resource": "정진우", "Status": "Planned"},
-    {"Task": "LG SDC 2025", "Start": "2025-09-23", "Finish": "2025-09-25", "Resource": "김영삼", "Status": "Planned"},
-    {"Task": "커피챗 지원자 모집", "Start": "2025-07-25", "Finish": "2025-08-22", "Resource": "김영삼", "Status": "Planned"},
-    {"Task": "키노트 연사 프로필 사진 취합", "Start": "2025-06-23", "Finish": "2025-07-11", "Resource": "김영삼", "Status": "In progress"},
-    {"Task": "컨퍼런스 주제/슬로건 확정", "Start": "2025-06-30", "Finish": "2025-07-01", "Resource": "김영삼", "Status": "Completed"},
-    {"Task": "홈페이지 오픈 준비", "Start": "2025-07-03", "Finish": "2025-07-10", "Resource": "김영삼", "Status": "Planned"},
+    {"Task": "콘셉트 디자인 확정", "Start": "2025-06-18", "Finish": "2025-07-04", "Resource": "Kim", "Status": "In progress"},
+    {"Task": "키노트 발표 주제 확정", "Start": "2025-06-23", "Finish": "2025-07-11", "Resource": "Kim", "Status": "In progress"},
+    {"Task": "데모 부스 주제 확정", "Start": "2025-06-23", "Finish": "2025-07-11", "Resource": "Kim", "Status": "In progress"},
+    {"Task": "발표자 모집", "Start": "2025-07-14", "Finish": "2025-08-01", "Resource": "Kim", "Status": "Planned"},
+    {"Task": "발표자 선정", "Start": "2025-08-04", "Finish": "2025-08-08", "Resource": "Kim", "Status": "Planned"},
+    {"Task": "발표자 선정 결과 안내", "Start": "2025-08-11", "Finish": "2025-08-11", "Resource": "Kim", "Status": "Planned"},
+    {"Task": "LGCPC 참가자 모집", "Start": "2025-07-25", "Finish": "2025-08-22", "Resource": "Jung", "Status": "Planned"},
+    {"Task": "키노트, 세션 발표 자료 제출", "Start": "2025-08-11", "Finish": "2025-09-12", "Resource": "Kim", "Status": "Planned"},
+    {"Task": "참가자 사전 등록", "Start": "2025-08-25", "Finish": "2025-09-19", "Resource": "Kim", "Status": "Planned"},
+    {"Task": "언론 보도 의뢰", "Start": "2025-08-25", "Finish": "2025-09-19", "Resource": "Na", "Status": "Planned"},
+    {"Task": "LGCPC 2025 예선 대회", "Start": "2025-09-06", "Finish": "2025-09-06", "Resource": "Jung", "Status": "Planned"},
+    {"Task": "LGCPC 2025 본선 대회", "Start": "2025-09-20", "Finish": "2025-09-20", "Resource": "Jung", "Status": "Planned"},
+    {"Task": "LG SDC 2025", "Start": "2025-09-23", "Finish": "2025-09-25", "Resource": "Kim", "Status": "Planned"},
+    {"Task": "커피챗 지원자 모집", "Start": "2025-07-25", "Finish": "2025-08-22", "Resource": "Kim", "Status": "Planned"},
+    {"Task": "키노트 연사 프로필 사진 취합", "Start": "2025-06-23", "Finish": "2025-07-11", "Resource": "Kim", "Status": "In progress"},
+    {"Task": "컨퍼런스 주제/슬로건 확정", "Start": "2025-06-30", "Finish": "2025-07-01", "Resource": "Kim", "Status": "Completed"},
+    {"Task": "홈페이지 오픈 준비", "Start": "2025-07-03", "Finish": "2025-07-10", "Resource": "Kim", "Status": "Planned"},
 ]
+
+# Streamlit UI for adding a new task
+st.sidebar.header("📌 새 작업 추가")
+new_task_name = st.sidebar.text_input("작업 이름")
+new_task_start = st.sidebar.date_input("시작일", value=datetime(2025, 6, 18))
+new_task_finish = st.sidebar.date_input("종료일", value=datetime(2025, 6, 25))
+new_task_resource = st.sidebar.text_input("담당자")
+new_task_status = st.sidebar.selectbox("상태", ["Planned", "In progress", "Due Soon", "Overdue", "Completed"])
+
+if st.sidebar.button("작업 추가"):
+    new_task = {
+        "Task": new_task_name,
+        "Start": new_task_start.strftime("%Y-%m-%d"),
+        "Finish": new_task_finish.strftime("%Y-%m-%d"),
+        "Resource": new_task_resource,
+        "Status": new_task_status
+    }
+    tasks.append(new_task)
+    st.sidebar.success("작업이 성공적으로 추가되었습니다!")
 
 # Convert to DataFrame
 df = pd.DataFrame(tasks)
@@ -32,7 +51,7 @@ today = datetime.today().date()
 for i, row in df.iterrows():
     finish_date = datetime.strptime(row['Finish'], "%Y-%m-%d").date()
     days_left = (finish_date - today).days
-    if row['Status'] != 'Completed':
+    if row['Status'] not in ['Completed', 'In progress']:
         if days_left < 0:
             df.at[i, 'Status'] = 'Overdue'
         elif days_left <= 7:
@@ -54,14 +73,6 @@ def add_duration_label(row):
 
 df['Task'] = df.apply(add_duration_label, axis=1)
 
-# Sidebar for manual status update
-st.sidebar.header("작업 상태 수동 변경")
-selected_task = st.sidebar.selectbox("작업 선택", df['Task'])
-new_status = st.sidebar.selectbox("새 상태 선택", ["Planned", "In progress", "Due Soon", "Overdue", "Completed"])
-if st.sidebar.button("상태 업데이트"):
-    df.loc[df['Task'] == selected_task, 'Status'] = new_status
-    st.sidebar.success(f"'{selected_task}' 상태가 '{new_status}'로 변경되었습니다.")
-
 # Create Gantt chart using Status for color
 fig = ff.create_gantt(
     df.to_dict('records'),
@@ -72,6 +83,6 @@ fig = ff.create_gantt(
 )
 
 # Display in Streamlit
-st.title("LG SDC 2025 Gantt Chart")
+st.title("📊 LG SDC 2025 Gantt Chart")
 st.plotly_chart(fig, use_container_width=True)
 

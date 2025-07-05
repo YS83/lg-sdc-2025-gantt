@@ -11,7 +11,7 @@ initial_tasks = [
     {"Task": "발표자 모집", "Start": "2025-07-14", "Finish": "2025-08-01", "Resource": "Kim", "Status": "Planned"},
     {"Task": "발표자 선정", "Start": "2025-08-04", "Finish": "2025-08-08", "Resource": "Kim", "Status": "Planned"},
     {"Task": "발표자 선정 결과 안내", "Start": "2025-08-11", "Finish": "2025-08-11", "Resource": "Kim", "Status": "Planned"},
-    {"Task": "LGCPC 참가자 모집", "Start": "2025-07-25", "Finish": "2025-08-22", "Resource": "Jung", "Status": "Planned"},
+    {"Task": "CPC 참가자 모집", "Start": "2025-07-25", "Finish": "2025-08-22", "Resource": "Jung", "Status": "Planned"},
     {"Task": "키노트, 세션 발표 자료 제출", "Start": "2025-08-11", "Finish": "2025-09-12", "Resource": "Kim", "Status": "Planned"},
     {"Task": "참가자 사전 등록", "Start": "2025-08-25", "Finish": "2025-09-19", "Resource": "Kim", "Status": "Planned"},
     {"Task": "언론 보도 의뢰", "Start": "2025-08-25", "Finish": "2025-09-19", "Resource": "Na", "Status": "Planned"},
@@ -85,7 +85,7 @@ fig = ff.create_gantt(
     index_col='Status',
     show_colorbar=True,
     group_tasks=True,
-    title="LG SDC 2025 Gantt Chart with Status and Duration"
+    title="SDC 2025 Gantt Chart with Status and Duration"
 )
 
 # Display in Streamlit

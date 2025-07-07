@@ -57,7 +57,7 @@ today = datetime.today().date()
 for i, row in df.iterrows():
     finish_date = datetime.strptime(row['Finish'], "%Y-%m-%d").date()
     days_left = (finish_date - today).days
-    if row['Status'] not in ["Completed", "In progress"]:
+    if row['Status'] not in ["Completed"]:
         if days_left < 0:
             df.at[i, 'Status'] = 'Overdue'
         elif days_left <= 7:

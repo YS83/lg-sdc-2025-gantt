@@ -8,6 +8,7 @@ initial_tasks = [
     {"Task": "콘셉트 디자인 확정", "Start": "2025-06-18", "Finish": "2025-07-07", "Resource": "Kim", "Status": "Completed"},
     {"Task": "키노트 발표 주제 확정", "Start": "2025-06-23", "Finish": "2025-07-11", "Resource": "Kim", "Status": "In progress"},
     {"Task": "데모 부스 주제 확정", "Start": "2025-06-23", "Finish": "2025-07-11", "Resource": "Kim", "Status": "In progress"},
+    {"Task": "워크숍 주제 확정", "Start": "2025-06-23", "Finish": "2025-07-11", "Resource": "Kim", "Status": "In progress"},
     {"Task": "발표자 모집", "Start": "2025-07-14", "Finish": "2025-08-01", "Resource": "Kim", "Status": "Planned"},
     {"Task": "발표자 선정", "Start": "2025-08-04", "Finish": "2025-08-08", "Resource": "Kim", "Status": "Planned"},
     {"Task": "발표자 선정 결과 안내", "Start": "2025-08-11", "Finish": "2025-08-11", "Resource": "Kim", "Status": "Planned"},
@@ -19,9 +20,11 @@ initial_tasks = [
     {"Task": "CPC 2025 본선 대회", "Start": "2025-09-20", "Finish": "2025-09-20", "Resource": "Jung", "Status": "Planned"},
     {"Task": "SDC 2025", "Start": "2025-09-23", "Finish": "2025-09-25", "Resource": "Kim", "Status": "Planned"},
     {"Task": "커피챗 지원자 모집", "Start": "2025-07-25", "Finish": "2025-08-22", "Resource": "Kim", "Status": "Planned"},
+    {"Task": "디스커버리투어 멘토 지원자 모집", "Start": "2025-07-25", "Finish": "2025-08-22", "Resource": "Kim", "Status": "Planned"},
     {"Task": "키노트 연사 프로필 사진 취합", "Start": "2025-06-23", "Finish": "2025-07-11", "Resource": "Kim", "Status": "In progress"},
     {"Task": "컨퍼런스 주제/슬로건 확정", "Start": "2025-06-30", "Finish": "2025-07-01", "Resource": "Kim", "Status": "Completed"},
-    {"Task": "홈페이지 오픈 준비", "Start": "2025-07-03", "Finish": "2025-07-10", "Resource": "Kim", "Status": "Planned"},
+    {"Task": "홈페이지 오픈 준비", "Start": "2025-07-03", "Finish": "2025-07-10", "Resource": "Kim", "Status": "In progress"},
+    {"Task": "홈페이지 오픈", "Start": "2025-07-14", "Finish": "2025-07-14", "Resource": "Kim", "Status": "In progress"},
 ]
 
 # Convert to DataFrame

@@ -93,19 +93,18 @@ fig = ff.create_gantt(
 
 # Add vertical line for today's date
 fig.add_shape(
-    dict(
-        type="line",
-        x0=today.strftime("%Y-%m-%d"),
-        x1=today.strftime("%Y-%m-%d"),
-        y0=0,
-        y1=1,
-        xref='x',
-        yref='paper',
-        line=dict(color="red", width=2, dash="dot")
-    )
+    dict(
+        type="line",
+        x0=today.strftime("%Y-%m-%d"),
+        x1=today.strftime("%Y-%m-%d"),
+        y0=0,
+        y1=1,
+        xref='x',
+        yref='paper',
+        line=dict(color="red", width=2, dash="dot")
+    )
 )
 
 # Display in Streamlit
 st.title("SDC 2025")
 st.plotly_chart(fig, use_container_width=True)
-

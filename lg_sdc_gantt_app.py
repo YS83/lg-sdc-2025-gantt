@@ -96,8 +96,8 @@ fig.add_shape(
     dict(
         type="line",
         x0=today.strftime("%Y-%m-%d"),
-        y0=0,
         x1=today.strftime("%Y-%m-%d"),
+        y0=0,
         y1=1,
         xref='x',
         yref='paper',

@@ -88,10 +88,10 @@ fig = ff.create_gantt(
     index_col='Status',
     show_colorbar=True,
     group_tasks=True,
-    title="SDC 2025 Gantt Chart with Status and Duration"
+    title="SDC 2025 Gantt Chart"
 )
 
 # Display in Streamlit
-st.title("SDC 2025 Gantt Chart")
+st.title("SDC 2025")
 st.plotly_chart(fig, use_container_width=True)
 

@@ -5,7 +5,7 @@ from datetime import datetime, timedelta
 
 # Initial task data
 initial_tasks = [
-    {"Task": "콘셉트 디자인 확정", "Start": "2025-06-18", "Finish": "2025-07-04", "Resource": "Kim", "Status": "In progress"},
+    {"Task": "콘셉트 디자인 확정", "Start": "2025-06-18", "Finish": "2025-07-07", "Resource": "Kim", "Status": "Completed"},
     {"Task": "키노트 발표 주제 확정", "Start": "2025-06-23", "Finish": "2025-07-11", "Resource": "Kim", "Status": "In progress"},
     {"Task": "데모 부스 주제 확정", "Start": "2025-06-23", "Finish": "2025-07-11", "Resource": "Kim", "Status": "In progress"},
     {"Task": "발표자 모집", "Start": "2025-07-14", "Finish": "2025-08-01", "Resource": "Kim", "Status": "Planned"},

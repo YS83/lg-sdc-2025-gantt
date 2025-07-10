@@ -12,12 +12,12 @@ initial_tasks = [
     {"Task": "발표자 모집", "Start": "2025-07-14", "Finish": "2025-08-01", "Resource": "Kim", "Status": "Planned"},
     {"Task": "발표자 선정", "Start": "2025-08-04", "Finish": "2025-08-08", "Resource": "Kim", "Status": "Planned"},
     {"Task": "발표자 선정 결과 안내", "Start": "2025-08-11", "Finish": "2025-08-11", "Resource": "Kim", "Status": "Planned"},
-    {"Task": "CPC 참가자 모집", "Start": "2025-07-25", "Finish": "2025-08-22", "Resource": "Jung", "Status": "Planned"},
+    {"Task": "CPC 참가자 모집", "Start": "2025-07-25", "Finish": "2025-08-22", "Resource": "Jeong", "Status": "Planned"},
     {"Task": "키노트, 세션 발표 자료 제출", "Start": "2025-08-11", "Finish": "2025-09-12", "Resource": "Kim", "Status": "Planned"},
     {"Task": "참가자 사전 등록", "Start": "2025-08-25", "Finish": "2025-09-19", "Resource": "Kim", "Status": "Planned"},
     {"Task": "언론 보도 의뢰", "Start": "2025-08-25", "Finish": "2025-09-19", "Resource": "Na", "Status": "Planned"},
-    {"Task": "CPC 2025 예선 대회", "Start": "2025-09-06", "Finish": "2025-09-06", "Resource": "Jung", "Status": "Planned"},
-    {"Task": "CPC 2025 본선 대회", "Start": "2025-09-20", "Finish": "2025-09-20", "Resource": "Jung", "Status": "Planned"},
+    {"Task": "CPC 2025 예선 대회", "Start": "2025-09-06", "Finish": "2025-09-06", "Resource": "Jeong", "Status": "Planned"},
+    {"Task": "CPC 2025 본선 대회", "Start": "2025-09-20", "Finish": "2025-09-20", "Resource": "Jeong", "Status": "Planned"},
     {"Task": "SDC 2025", "Start": "2025-09-23", "Finish": "2025-09-25", "Resource": "Kim", "Status": "Planned"},
     {"Task": "커피챗 지원자 모집", "Start": "2025-07-25", "Finish": "2025-08-22", "Resource": "Kim", "Status": "Planned"},
     {"Task": "디스커버리투어 멘토 지원자 모집", "Start": "2025-07-25", "Finish": "2025-08-22", "Resource": "Kim", "Status": "Planned"},
@@ -25,6 +25,7 @@ initial_tasks = [
     {"Task": "컨퍼런스 주제/슬로건 확정", "Start": "2025-06-30", "Finish": "2025-07-01", "Resource": "Kim", "Status": "Completed"},
     {"Task": "홈페이지 오픈 준비", "Start": "2025-07-03", "Finish": "2025-07-10", "Resource": "Kim", "Status": "In progress"},
     {"Task": "홈페이지 오픈", "Start": "2025-07-14", "Finish": "2025-07-14", "Resource": "Kim", "Status": "In progress"},
+    {"Task": "개인정보 관련 문건 검토", "Start": "2025-07-10", "Finish": "2025-07-14", "Resource": "Kim", "Status": "In progress"},
 ]
 
 # Convert to DataFrame

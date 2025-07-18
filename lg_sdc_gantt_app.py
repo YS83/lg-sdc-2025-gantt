@@ -25,7 +25,7 @@ initial_tasks = [
     {"Task": "컨퍼런스 주제/슬로건 확정", "Start": "2025-06-30", "Finish": "2025-07-01", "Resource": "Kim", "Status": "Completed"},
     {"Task": "홈페이지 가오픈 준비", "Start": "2025-07-03", "Finish": "2025-07-10", "Resource": "Kim", "Status": "Completed"},
     {"Task": "홈페이지 오픈", "Start": "2025-07-28", "Finish": "2025-07-28", "Resource": "Kim", "Status": "In progress"},
-    {"Task": "개인정보 관련 문건 검토", "Start": "2025-07-10", "Finish": "2025-07-25", "Resource": "Kim", "Status": "In progress"},
+    {"Task": "이용약관 검토", "Start": "2025-07-10", "Finish": "2025-07-25", "Resource": "Kim", "Status": "In progress"},
     {"Task": "SDC 굿즈 선정", "Start": "2025-07-02", "Finish": "2025-07-22", "Resource": "Kim", "Status": "In progress"},
 ]
 

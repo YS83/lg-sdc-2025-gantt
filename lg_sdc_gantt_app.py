@@ -8,7 +8,7 @@ initial_tasks = [
     {"Task": "콘셉트 디자인 확정", "Start": "2025-06-18", "Finish": "2025-07-07", "Resource": "Kim", "Status": "Completed"},
     {"Task": "키노트 발표 주제 확정", "Start": "2025-06-23", "Finish": "2025-07-14", "Resource": "Kim", "Status": "Completed"},
     {"Task": "데모 부스 주제 확정", "Start": "2025-06-23", "Finish": "2025-07-25", "Resource": "Kim", "Status": "In progress"},
-    {"Task": "워크숍 주제 확정", "Start": "2025-06-23", "Finish": "2025-07-25", "Resource": "Kim", "Status": "In progress"},
+    {"Task": "워크숍 주제 및 일정 확정", "Start": "2025-06-23", "Finish": "2025-07-25", "Resource": "Kim", "Status": "In progress"},
     {"Task": "발표자 모집", "Start": "2025-07-28", "Finish": "2025-08-08", "Resource": "Kim", "Status": "Planned"},
     {"Task": "발표자 선정", "Start": "2025-08-04", "Finish": "2025-08-08", "Resource": "Kim", "Status": "Planned"},
     {"Task": "발표자 선정 결과 안내", "Start": "2025-08-13", "Finish": "2025-08-13", "Resource": "Kim", "Status": "Planned"},

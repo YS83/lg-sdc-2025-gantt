@@ -26,7 +26,7 @@ initial_tasks = [
     {"Task": "홈페이지 가오픈 준비", "Start": "2025-07-03", "Finish": "2025-07-10", "Resource": "Kim", "Status": "Completed"},
     {"Task": "홈페이지 오픈", "Start": "2025-07-28", "Finish": "2025-07-28", "Resource": "Kim", "Status": "In progress"},
     {"Task": "이용약관 검토", "Start": "2025-07-10", "Finish": "2025-07-25", "Resource": "Kim", "Status": "In progress"},
-    {"Task": "SDC 굿즈 선정", "Start": "2025-07-02", "Finish": "2025-07-22", "Resource": "Kim", "Status": "In progress"},
+    {"Task": "SDC 굿즈 선정", "Start": "2025-07-02", "Finish": "2025-07-22", "Resource": "Kim", "Status": "Completed"},
     {"Task": "분야별 개발자 모임 통합 브랜딩 굿즈 검토", "Start": "2025-06-25", "Finish": "2025-07-23", "Resource": "Kim", "Status": "Completed"},
     {"Task": "(홈페이지) 각 프로그램별 안내페이지 제작", "Start": "2025-07-22", "Finish": "2025-08-11", "Resource": "Kim", "Status": "In progress"},
     {"Task": "(장소예약) 글로벌라운지 시설 예약", "Start": "2025-07-25", "Finish": "2025-07-27", "Resource": "Kim", "Status": "In progress"},

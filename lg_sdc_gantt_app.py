@@ -19,7 +19,7 @@ initial_tasks = [
     {"Task": "CPC 2025 예선", "Start": "2025-09-06", "Finish": "2025-09-06", "Resource": "Jeong", "Status": "Planned"},
     {"Task": "CPC 2025 본선", "Start": "2025-09-20", "Finish": "2025-09-20", "Resource": "Jeong", "Status": "Planned"},
     {"Task": "SDC 2025 개최", "Start": "2025-09-23", "Finish": "2025-09-25", "Resource": "Kim", "Status": "Planned"},
-    {"Task": "커피챗 지원자 모집", "Start": "2025-08-05", "Finish": "2025-08-22", "Resource": "Kim", "Status": "Planned"},
+    {"Task": "커피챗 지원자 모집", "Start": "2025-08-05", "Finish": "2025-08-22", "Resource": "Kim", "Status": "In progress"},
     {"Task": "디스커버리투어 멘토 모집", "Start": "2025-07-18", "Finish": "2025-07-25", "Resource": "Kim", "Status": "Completed"},
     {"Task": "키노트 연사 프로필 자료 취합", "Start": "2025-06-23", "Finish": "2025-07-17", "Resource": "Kim", "Status": "Completed"},
     {"Task": "컨퍼런스 주제/슬로건 확정", "Start": "2025-06-30", "Finish": "2025-07-01", "Resource": "Kim", "Status": "Completed"},

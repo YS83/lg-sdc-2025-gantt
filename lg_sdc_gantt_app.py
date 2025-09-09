@@ -16,7 +16,7 @@ initial_tasks = [
     {"Task": "발표 자료 취합", "Start": "2025-08-20", "Finish": "2025-09-19", "Resource": "Kim", "Status": "In progress"},
     {"Task": "사전 참가자 등록", "Start": "2025-08-25", "Finish": "2025-09-19", "Resource": "Kim", "Status": "In progress"},
     {"Task": "언론 보도 준비", "Start": "2025-08-25", "Finish": "2025-09-19", "Resource": "Na", "Status": "In progress"},
-    {"Task": "CPC 2025 예선", "Start": "2025-09-06", "Finish": "2025-09-06", "Resource": "Jeong", "Status": "Planned"},
+    {"Task": "CPC 2025 예선", "Start": "2025-09-06", "Finish": "2025-09-06", "Resource": "Jeong", "Status": "Completed"},
     {"Task": "CPC 2025 본선", "Start": "2025-09-20", "Finish": "2025-09-20", "Resource": "Jeong", "Status": "Planned"},
     {"Task": "SDC 2025 개최", "Start": "2025-09-23", "Finish": "2025-09-25", "Resource": "Kim", "Status": "Planned"},
     {"Task": "오픈멘토링 멘토 지원자 모집", "Start": "2025-08-05", "Finish": "2025-08-19", "Resource": "Kim", "Status": "Completed"},

@@ -30,13 +30,13 @@ initial_tasks = [
     {"Task": "개발자 모임 통합 브랜딩 굿즈 검토", "Start": "2025-06-25", "Finish": "2025-07-23", "Resource": "Kim", "Status": "Completed"},
     {"Task": "프로그램별 안내페이지 제작", "Start": "2025-07-22", "Finish": "2025-08-25", "Resource": "Kim", "Status": "Completed"},
     {"Task": "글로벌라운지 시설 예약", "Start": "2025-07-25", "Finish": "2025-07-27", "Resource": "Kim", "Status": "Completed"},
-    {"Task": "공용시설 운영 협조 요청", "Start": "2025-08-05", "Finish": "2025-09-12", "Resource": "Kim", "Status": "In progress"},
+    {"Task": "공용시설 운영 협조 요청", "Start": "2025-08-05", "Finish": "2025-09-15", "Resource": "Kim", "Status": "Completed"},
     {"Task": "안전작업계획서 작성", "Start": "2025-08-01", "Finish": "2025-09-09", "Resource": "Kim", "Status": "Completed"},
     {"Task": "추가 발표자 모집", "Start": "2025-08-25", "Finish": "2025-08-29", "Resource": "Kim", "Status": "Completed"},
     {"Task": "오찬 참석자 명단 확정", "Start": "2025-08-25", "Finish": "2025-08-29", "Resource": "Kim", "Status": "Completed"},
     {"Task": "오픈멘토링 준비 사항 안내", "Start": "2025-08-27", "Finish": "2025-08-27", "Resource": "Kim", "Status": "Completed"},
     {"Task": "VIP 참석자 확인", "Start": "2025-08-25", "Finish": "2025-09-19", "Resource": "Kim", "Status": "In progress"},
-    {"Task": "키노트 오찬 일정 및 식단 안내", "Start": "2025-08-25", "Finish": "2025-09-08", "Resource": "Kim", "Status": "Completed"},
+    {"Task": "키노트 오찬 안내", "Start": "2025-08-25", "Finish": "2025-09-08", "Resource": "Kim", "Status": "Completed"},
 ]
 
 # Convert to DataFrame

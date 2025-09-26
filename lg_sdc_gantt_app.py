@@ -18,7 +18,7 @@ initial_tasks = [
     {"Task": "언론 보도 준비", "Start": "2025-08-25", "Finish": "2025-09-19", "Resource": "Na", "Status": "Completed"},
     {"Task": "CPC 2025 예선", "Start": "2025-09-06", "Finish": "2025-09-06", "Resource": "Jeong", "Status": "Completed"},
     {"Task": "CPC 2025 본선", "Start": "2025-09-20", "Finish": "2025-09-20", "Resource": "Jeong", "Status": "Completed"},
-    {"Task": "SDC 2025 개최", "Start": "2025-09-23", "Finish": "2025-09-25", "Resource": "Kim", "Status": "In progress"},
+    {"Task": "SDC 2025 개최", "Start": "2025-09-23", "Finish": "2025-09-25", "Resource": "Kim", "Status": "Completed"},
     {"Task": "오픈멘토링 멘토 지원자 모집", "Start": "2025-08-05", "Finish": "2025-08-19", "Resource": "Kim", "Status": "Completed"},
     {"Task": "디스커버리투어 멘토 모집", "Start": "2025-07-18", "Finish": "2025-07-25", "Resource": "Kim", "Status": "Completed"},
     {"Task": "키노트 연사 프로필 자료 취합", "Start": "2025-06-23", "Finish": "2025-07-17", "Resource": "Kim", "Status": "Completed"},
